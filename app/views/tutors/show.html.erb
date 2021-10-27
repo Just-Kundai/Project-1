@@ -1,2 +1,21 @@
-<h1>Tutors#show</h1>
-<p>Find me in app/views/tutors/show.html.erb</p>
+<div class="driver-profile">
+<h1 class="pb-4"><%= @tutor.name %></h1>
+
+<%= image_tag @tutor.image, :class => 'feature pb-5 tutor_image' %>
+
+  <ul>
+    <li><strong>Name:</strong> <%= @tutor.name %></li>
+    <li><strong>Subject:</strong> <%= @tutor.subject %></li>
+    <li><strong>Years of Experience:</strong> <%= @tutor.years_of_experience %></li>
+    <li><strong>Current Ranking:</strong> <%= @tutor.current_ranking %></li><br>
+    <p><%= @tutor.bio %></p>
+    <% @tutor.subject.each do |subject| %>
+    <% end %>
+  </ul>
+
+
+<div class="controls m-3 float-end">
+  <%= button_to "Edit Tutor", edit_tutor_path(@tutor.id), :method => 'get' %><br>
+  <%= button_to "Delete Tutor", @tutor, :method => 'delete', :data => { :confirm => 'Are you sure?'} %>
+</div>
+</div>
