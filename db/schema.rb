@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_10_26_233014) do
+ActiveRecord::Schema.define(version: 2021_10_27_011520) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -22,11 +22,6 @@ ActiveRecord::Schema.define(version: 2021_10_26_233014) do
     t.datetime "updated_at", null: false
   end
 
-  create_table "subject_tutors", id: false, force: :cascade do |t|
-    t.integer "subject_id"
-    t.integer "tutor_id"
-  end
-
   create_table "subjects", force: :cascade do |t|
     t.text "name"
     t.integer "number_of_topics"
@@ -35,6 +30,12 @@ ActiveRecord::Schema.define(version: 2021_10_26_233014) do
     t.datetime "updated_at", null: false
     t.text "textbook"
     t.text "tutors"
+    t.integer "tutor_id"
+  end
+
+  create_table "subjects_tutors", force: :cascade do |t|
+    t.integer "subject_id"
+    t.integer "tutor_id"
   end
 
   create_table "tutors", force: :cascade do |t|
@@ -51,8 +52,8 @@ ActiveRecord::Schema.define(version: 2021_10_26_233014) do
     t.text "subject"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.string "email"
     t.integer "year_of_study"
+    t.string "email"
   end
 
 end
