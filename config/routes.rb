@@ -1,23 +1,10 @@
 Rails.application.routes.draw do
- devise_for :accounts
-
- root to:"public#home"
-
- get "u/:username" => "user#profile", as: :profile
-
-  root :to => "chat#index"
+  root :to => "pages#home"
   resources :subjects
-  
-
-  root :to => "subject#index"
-  resources :subjects
-
-
-  root :to => "user#index"
+  resources :chats
   resources :users
-
-  root :to => "tutors#index"
   resources :tutors
-
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+  get '/login' => 'sessions#new'
+  post '/login' => 'sessions#create'
+  delete '/login' => 'sessions#destroy'
 end
