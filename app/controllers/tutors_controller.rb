@@ -1,5 +1,5 @@
 class TutorsController < ApplicationController
-  before_action :check_for_admin, :only => [:index]
+
 
   def index
     @tutors = Tutor.all
@@ -7,6 +7,11 @@ class TutorsController < ApplicationController
 
   def new
     @tutors = Tutor.new
+  end
+
+  def show
+    @tutors = Tutor.find params[:id]
+
   end
 
   def create

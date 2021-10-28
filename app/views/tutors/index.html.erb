@@ -1,20 +1,9 @@
-<div class="container">
-  <table class="table mt-5 text-center">
-    <thead class="thead-dark">
-      <tr>
-        <th scope="col">Name</th>
-        <th scope="col">Number Of Tutors</th>
-      </tr>
-    </thead>
-    <tbody>
-      <% @tutors.each do |tutor| %>
-      <tr>
-        <th scope="row"><%= link_to tutor.name, owner_path(tutor.id) %></th>
-        <td><%= tutor.users.count %></td>
-      </tr>
-      <% end %>
-    </tbody>
-  </table>
+<h2><%= Tutor.count %> subjects</h2>
+
+<% @tutors.each do |tutor| %>
+<p class = "tutor">
+    <%= link_to tutor.name, tutor_path(tutor.id) %>
+  </p>
+<% end %>
 
   <%= link_to "Add New Tutor", new_tutor_path, :class => "btn btn-outline-info" %>
-</div>

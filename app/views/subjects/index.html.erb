@@ -1,0 +1,9 @@
+<h1>All Subjects</h1>
+
+<h2><%= Subject.count %> subjects</h2>
+
+<% @subject.each do |subject| %>
+<p class = "subject">
+    <%= link_to subject.name, subject_path(subject.id) %>
+  </p>
+<% end %>

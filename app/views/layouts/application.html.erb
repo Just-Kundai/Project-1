@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>TutorMarketplace2</title>
+    <title>The Legal Plug</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -9,7 +9,22 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
-  <body>
-    <%= yield %>
+  <body class="the-body">
+
+    <%= render partial: "layouts/header" %>
+
+    <section class="">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 pt-4">
+            <%= yield %>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <%= render partial: "layouts/footer" %>
+
+
   </body>
 </html>

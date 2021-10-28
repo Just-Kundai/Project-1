@@ -1,5 +1,4 @@
-class SubjectController < ApplicationController
-  before_action :check_for_admin, :only => [:index]
+class SubjectsController < ApplicationController
 
   def index
     @subject = Subject.all
@@ -7,6 +6,11 @@ class SubjectController < ApplicationController
 
   def new
     @subject = Subject.new
+  end
+
+  def show
+    @subject = Subject.find params[:id]
+
   end
 
   def create

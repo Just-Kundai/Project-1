@@ -1,35 +1,45 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rails db:seed command (or created alongside the database with db:setup).
-#
-# Examples:
-#
-#   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
-#   Character.create(name: 'Luke', movie: movies.first)
-
-
 Tutor.destroy_all
-t1 = Tutor.create :name => 'Peter Gerangelos'#, :subject => 'Federal Constitutional Law', :years_of_experience => 5, :image =>"https://www.sydney.edu.au/AcademicProfiles/profile/resource?urlid=peter.gerangelos"
+t1 = Tutor.create :name => 'Peter Gerangelos', :subject => 'Federal Constitutional Law', :image =>"https://www.sydney.edu.au/AcademicProfiles/profile/resource?urlid=peter.gerangelos", :bio => 'Really great tutor, very patient and explains the concepts in micro economics really well!
 
-t2 = Tutor.create :name => 'Ben Saul'#, :subject => 'War Law', :years_of_experience => 3, :image =>"https://www.sydney.edu.au/AcademicProfiles/profile/resource?urlid=ben.saul"
+Ahmed'
 
-t3 = Tutor.create :name => 'James Harris'#, :subject =>'Corporations Law', :years_of_experience => 2, :image => "https://www.bravotv.com/sites/bravo/files/styles/scale--1200/public/2021/08/mdla-season-13-james-harris-headshot.jpg?itok=tpEbize5"
+t2 = Tutor.create :name => 'Ben Saul', :subject => 'War Law', :image =>"https://www.sydney.edu.au/AcademicProfiles/profile/resource?urlid=ben.saul", :bio => 'I had Ben as a tutor for War Law section 2 essay writing and she assisted me tremendously with both essay structure and content. I went into the exam feeling more competent than any of my previous War Law sittings.
+I could not recommend Ben enough
 
-t4 = Tutor.create :name => 'Jamie Glister'#, :subject => 'Introduction To Commercial Property Law', :years_of_experience => 6, :image => "https://www.sydney.edu.au/AcademicProfiles/profile/resource?urlid=jamie.glister"
+Sophie'
 
-t5 = Tutor.create :name => 'Tsitsi Dangarembwa'#, subject:'Torts', :years_of_experience => 4, :image => "https://i0.wp.com/www.jamesmurua.com/wp-content/uploads/2018/09/tsitsi-dangarembga.png?w=800&ssl=1"
+t3 = Tutor.create :name => 'James Harris', :subject =>'Corporations Law', :image => "https://www.bravotv.com/sites/bravo/files/styles/scale--1200/public/2021/08/mdla-season-13-james-harris-headshot.jpg?itok=tpEbize5", :bio => 'I have had a few tutoring with James to help me out with some law assignments, he is truly excellent at what he does. James is able to explain complex topics in simple terms and provides enormous help with upcoming exams and assignments. His tutoring sessions are very effective and we’re able to help me receive the marks I intended for. I would highly recommend messaging James if you’re looking for some help with your uni work!
 
-t6 = Tutor.create :name => 'Ngungi Wathi'#, :subject => 'Contracts', :years_of_experience => 3, :image => "https://i.guim.co.uk/img/media/2fb63355fac07696ecfa2eceb581ff6e770a546c/0_32_2400_1440/master/2400.jpg?width=620&quality=45&auto=format&fit=max&dpr=2&s=f1dfac5f0c5c0572469672a30bb42a4f"
+Natasha,'
 
-t7 = Tutor.create :name => 'Chinua Achebe'#, :subjects => 'Legal Ethics', :years_of_experience =>10, :image => "https://www.theparisreview.org/il/e4b8f842fe/large/Chinua-Achebe.jpg"
+t4 = Tutor.create :name => 'Jamie Glister', :subject => 'Introduction To Commercial Property Law', :image => "https://www.sydney.edu.au/AcademicProfiles/profile/resource?urlid=jamie.glister", :bio => 'Jamie was amazing. Quick replies, fast marking with very detailed responses. Great depth of Law knowledge, worth every dollar. Explains points and helps build understandings on difficult topics easily.
 
-t8 = Tutor.create :name => 'Chimamanda Adichie'#, :subject => 'Administrative Law', :years_of_experience =>16, :image =>"https://i.guim.co.uk/img/media/f097de5f2e379ac5113155e29b1dd78f233af330/0_218_4905_2943/master/4905.jpg?width=620&quality=45&auto=format&fit=max&dpr=2&s=9f58a4b8b5c251e64d9853076d825121"
+Thanks Jamie
+
+John'
+
+t5 = Tutor.create :name => 'Tsitsi Dangarembwa', subject:'Torts', :image => "https://i0.wp.com/www.jamesmurua.com/wp-content/uploads/2018/09/tsitsi-dangarembga.png?w=800&ssl=1", :bio => 'I could not recommend Tsitsi enough!! Tsitsi tutors me for law and has helped me understand how to write for law in order to gain the top marks. Her knowledge and teaching abilities have helped me gain extraordinary marks and further knowledge about the law itself.
+
+Tara'
+
+t6 = Tutor.create :name => 'Ngungi Wathi', :subject => 'Contracts', :image => "https://i.guim.co.uk/img/media/2fb63355fac07696ecfa2eceb581ff6e770a546c/0_32_2400_1440/master/2400.jpg?width=620&quality=45&auto=format&fit=max&dpr=2&s=f1dfac5f0c5c0572469672a30bb42a4f", :bio => 'Ngungi helped me with LAWS5006 and he was absolutely amazing! He knows the elements of a research report so well and explains them in such an easy-to-digest way. 10/10 recommend!
+
+Binghua'
+
+t7 = Tutor.create :name => 'Chinua Achebe', :subject => 'Legal Ethics', :image => "https://www.theparisreview.org/il/e4b8f842fe/large/Chinua-Achebe.jpg", :bio => 'Highly recommend Chi to anyone thinking about tutoring. Legal Ethics was very overwhelming but he managed to break down concepts in ways that I could understand. This increased my confidence and therefore my grades. He was also more than happy to help with questions I had about other units.
+
+Hanna'
+
+t8 = Tutor.create :name => 'Chimamanda Adichie', :subject => 'Administrative Law', :image =>"https://i.guim.co.uk/img/media/f097de5f2e379ac5113155e29b1dd78f233af330/0_218_4905_2943/master/4905.jpg?width=620&quality=45&auto=format&fit=max&dpr=2&s=9f58a4b8b5c251e64d9853076d825121", :bio => 'Chimamanda is one of the best tutors I haveve ever had. Very knowledgeable and great resources!!
+
+Gabriel'
 
 puts "#{ Tutor.count } tutor"
 
 User.destroy_all
-u1 = User.create :email => 'hailie27@hotmail.com'
-u2 = User.create :email => 'reinger.joanne@gmail.com'
-puts "#{ User.count } user"
+u1 = User.create :email => 'hailie27@hotmail.com', :password => 'chicken'
+u2 = User.create :email => 'reinger.joanne@gmail.com', :password => 'chicken'
+puts "#{ User.count } users"
 
 Subject.destroy_all
 s1 = Subject.create :name => 'Criminal Law and Procedure'
@@ -45,9 +55,29 @@ s10 = Subject.create :name => 'Legal Ethics'
 s11 = Subject.create :name => 'Corporations Law'
 puts "#{ Subject.count } subject"
 
+Required_Textbook.destroy_all
+tb1 = Required_Textbook.create :name => 'Babcock, Massaro, Spaulding, and Gilles, Civil Procedure, 7h Ed., 2021, Aspen', :image => "https://legal.thomsonreuters.com.au/Images/product/AU/124802.jpg"
+tb2 = Required_Textbook.create :name => 'Federal Rules of Civil Procedure, 2021-20 Educational Edition, 2021, West', :image => "https://legal.thomsonreuters.com.au/Images/product/AU/120621.jpg"
+tb3 = Required_Textbook.create :name => 'Ayres and Klass, Studies in Contract Law, 9th Ed., 2017, Foundation ', :image => "https://legal.thomsonreuters.com.au/Images/product/AU/124999.jpg"
+tb4 = Required_Textbook.create :name => 'Franklin, Rabin, Green, Geistfeld and Engstrom, Tort Law and Alternatives: Cases and Materials,
+Michelle Mello/David Studdert 11th Ed., 2021, Foundation', :image => "https://legal.thomsonreuters.com.au/Images/product/AU/125000.jpg"
+tb5 = Required_Textbook.create :name => 'Selmi, Principles of Appellate Advocacy, 2013, Aspen
+Armstrong, Terrell, and Reich, Advanced Appellate Advocacy, 2016, Aspen (optional)', :image => "https://legal.thomsonreuters.com.au/Images/product/AU/120634.jpg"
+tb6 = Required_Textbook.create :name => 'Lawless, Robbennolt, Ulen, Empirical Methods in Law, 2nd Ed., Aspen', :image => "https://legal.thomsonreuters.com.au/Images/product/AU/121042.jpg"
+tb7 = Required_Textbook.create :name => 'Friedman and Hayden, American Law: An Introduction, 3rd Ed., 2017, Oxford University', :image => "https://legal.thomsonreuters.com.au/Images/product/AU/126747.JPG"
+tb8 = Required_Textbook.create :name => 'Ling and Archer, Real Estate Principles: A Value Approach, 5
+th Ed., 2018, McGraw Hill ', :image => "https://legal.thomsonreuters.com.au/Images/product/AU/128938.jpg"
+tb9 = Required_Textbook.create :name => 'Bank and Stark, Selected Sections: Federal Income Tax Code and Regulations, 2021-22, West
+(recommended)', :image => "https://legal.thomsonreuters.com.au/Images/product/AU/128872.jpg"
+tb10 = Required_Textbook.create :name => 'Sterk and Leslie, Estates and Trusts: Cases and Materials, 6th Ed., 2019, Foundation', :image => "https://legal.thomsonreuters.com.au/Images/product/AU/128343.jpg"
+tb11 = Required_Textbook.create :name => 'Mitchell, Picturing Corporate Practice, 1st Ed., 2016, West', :image => "https://legal.thomsonreuters.com.au/Images/product/AU/127446.jpg"
+
 
 ##### Associations #################
 
 puts "Tutors and subjects"
-t1.subjects << s1 <<s2 <<s3 <<s4
-t2.subjects << s5 <<s6 << s7 <<s8
+t1.subjects << s1 << s2 << s3 << s4
+t2.subjects << s5 << s6 << s7 << s8
+
+puts "Subject and textbooks"
+s1.textbooks << tb1 << tb2 << tb3 << tb4
