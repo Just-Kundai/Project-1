@@ -3,6 +3,7 @@
 A simple tutor directory for the common law priestly 11 subjects.
 
 See it live at: https://just-kundai.github.io/project-1/
+
 See it on the Heroku App: https://tutormarketplace2021.herokuapp.com/
 
 *  Technologies
