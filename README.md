@@ -1,24 +1,47 @@
-# README
+# Project 1 - A simple tutor market place for law students.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+A simple tutor directory for the common law priestly 11 subjects.
 
-Things you may want to cover:
+See it live at: https://just-kundai.github.io/project-1/
+See it on the Heroku App: https://tutormarketplace2021.herokuapp.com/
 
-* Ruby version
+*  Technologies
+*  Approach
+*  Features
+*  Lessons Learned
+*  Setup
+*  Unsolved Problems
+*  Future Additions
 
-* System dependencies
+### Technologies
+* Ruby 2.7.4
+* Ruby on Rails 6.1.4.1
+* Javascript
+* Bootstrap 5.1.3
+* HTML
+* CSS
 
-* Configuration
+### Functionalities
 
-* Database creation
+* Users can sign up for a profile and sign in order to access the list of available tutors and the subjects per tutor.
 
-* Database initialization
+### Features
 
-* How to run the test suite
+* CRUD systems
+* Sign up page - form
+* Sign Out
+* Editing and deleting options
 
-* Services (job queues, cache servers, search engines, etc.)
+### Setup
 
-* Deployment instructions
+To run this project, you can download the source code, or see it live at https://just-kundai.github.io/project-1/
 
-* ...
+### Future Additions
+
+* Adding the option to communicate with tutor on the platform
+* Making delete option only available to admin
+* Making it such that individuals can view their own tutor and subject selections on a profile page
+
+### Special Thanks
+
+Rowena and Pat you are awesome.   

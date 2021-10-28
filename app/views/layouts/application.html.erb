@@ -1,30 +1,30 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>The Legal Plug</title>
-    <%= csrf_meta_tags %>
-    <%= csp_meta_tag %>
+<head>
+  <title>The Legal Plug</title>
+  <%= csrf_meta_tags %>
+  <%= csp_meta_tag %>
 
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-  </head>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+</head>
 
-  <body class="the-body">
+<body class="the-body">
 
-    <%= render partial: "layouts/header" %>
+  <%= render partial: "layouts/header" %>
 
-    <section class="">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12 pt-4">
-            <%= yield %>
-          </div>
+  <section class="">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 pt-4">
+          <%= yield %>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <%= render partial: "layouts/footer" %>
+  <%= render partial: "layouts/footer" %>
 
 
-  </body>
+</body>
 </html>

@@ -1,19 +1,19 @@
 <h2> List of Available Tutors </h2>
 
 <ul class="list-group">
-<% @tutors.each do |tutor| %>
+  <% @tutors.each do |tutor| %>
 
-<li class="list-group-item">
-  <p class = "tutor">
+  <li class="list-group-item">
+    <p class = "tutor">
       <%= image_tag tutor.image, :class  => "tutor_image" %>
 
       <%= link_to tutor.name, tutor_path(tutor.id) %>
     </p>
 
 
-</li>
+  </li>
 
-<% end %>
+  <% end %>
 </ul>
 
-  <%= link_to "Add New Tutor", new_tutor_path, :class => "btn btn-outline-info" %>
+<%= link_to "Add New Tutor", new_tutor_path, :class => "btn btn-outline-info" %>

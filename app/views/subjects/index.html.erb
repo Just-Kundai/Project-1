@@ -1,12 +1,12 @@
-<h1>All Subjects</h1>
+<h2>List of Subjects</h2>
 
 <ul class="list-group">
-<% @subject.each do |subject| %>
-<li class="list-group-item">
-<p class = "subject">
-  
-    <%= link_to subject.name, subject_path(subject.id) %>
-  </p>
+  <% @subject.each do |subject| %>
+  <li class="list-group-item">
+    <p class = "subject">
+
+      <%= link_to subject.name, subject_path(subject.id) %>
+    </p>
   </li>
-<% end %>
+  <% end %>
 </ul>

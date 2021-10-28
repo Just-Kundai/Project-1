@@ -7,6 +7,8 @@ Rails.application.routes.draw do
   get '/login' => 'session#new'
   post '/login' => 'session#create'
   delete '/login' => 'session#destroy'
+  get '/home' => 'pages#home'
   get '/about' => 'pages#about'
-
+  get '/get' => 'pages#get'
+  get '/faq' => 'pages#faq'
 end
