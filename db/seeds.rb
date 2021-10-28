@@ -55,22 +55,22 @@ s10 = Subject.create :name => 'Legal Ethics'
 s11 = Subject.create :name => 'Corporations Law'
 puts "#{ Subject.count } subject"
 
-Required_Textbook.destroy_all
-tb1 = Required_Textbook.create :name => 'Babcock, Massaro, Spaulding, and Gilles, Civil Procedure, 7h Ed., 2021, Aspen', :image => "https://legal.thomsonreuters.com.au/Images/product/AU/124802.jpg"
-tb2 = Required_Textbook.create :name => 'Federal Rules of Civil Procedure, 2021-20 Educational Edition, 2021, West', :image => "https://legal.thomsonreuters.com.au/Images/product/AU/120621.jpg"
-tb3 = Required_Textbook.create :name => 'Ayres and Klass, Studies in Contract Law, 9th Ed., 2017, Foundation ', :image => "https://legal.thomsonreuters.com.au/Images/product/AU/124999.jpg"
-tb4 = Required_Textbook.create :name => 'Franklin, Rabin, Green, Geistfeld and Engstrom, Tort Law and Alternatives: Cases and Materials,
-Michelle Mello/David Studdert 11th Ed., 2021, Foundation', :image => "https://legal.thomsonreuters.com.au/Images/product/AU/125000.jpg"
-tb5 = Required_Textbook.create :name => 'Selmi, Principles of Appellate Advocacy, 2013, Aspen
-Armstrong, Terrell, and Reich, Advanced Appellate Advocacy, 2016, Aspen (optional)', :image => "https://legal.thomsonreuters.com.au/Images/product/AU/120634.jpg"
-tb6 = Required_Textbook.create :name => 'Lawless, Robbennolt, Ulen, Empirical Methods in Law, 2nd Ed., Aspen', :image => "https://legal.thomsonreuters.com.au/Images/product/AU/121042.jpg"
-tb7 = Required_Textbook.create :name => 'Friedman and Hayden, American Law: An Introduction, 3rd Ed., 2017, Oxford University', :image => "https://legal.thomsonreuters.com.au/Images/product/AU/126747.JPG"
-tb8 = Required_Textbook.create :name => 'Ling and Archer, Real Estate Principles: A Value Approach, 5
-th Ed., 2018, McGraw Hill ', :image => "https://legal.thomsonreuters.com.au/Images/product/AU/128938.jpg"
-tb9 = Required_Textbook.create :name => 'Bank and Stark, Selected Sections: Federal Income Tax Code and Regulations, 2021-22, West
-(recommended)', :image => "https://legal.thomsonreuters.com.au/Images/product/AU/128872.jpg"
-tb10 = Required_Textbook.create :name => 'Sterk and Leslie, Estates and Trusts: Cases and Materials, 6th Ed., 2019, Foundation', :image => "https://legal.thomsonreuters.com.au/Images/product/AU/128343.jpg"
-tb11 = Required_Textbook.create :name => 'Mitchell, Picturing Corporate Practice, 1st Ed., 2016, West', :image => "https://legal.thomsonreuters.com.au/Images/product/AU/127446.jpg"
+# RequiredTextbook.destroy_all
+# tb1 = RequiredTextbook.create :name => 'Babcock, Massaro, Spaulding, and Gilles, Civil Procedure, 7h Ed., 2021, Aspen', :image => "https://legal.thomsonreuters.com.au/Images/product/AU/124802.jpg"
+# tb2 = RequiredTextbook.create :name => 'Federal Rules of Civil Procedure, 2021-20 Educational Edition, 2021, West', :image => "https://legal.thomsonreuters.com.au/Images/product/AU/120621.jpg"
+# tb3 = RequiredTextbook.create :name => 'Ayres and Klass, Studies in Contract Law, 9th Ed., 2017, Foundation ', :image => "https://legal.thomsonreuters.com.au/Images/product/AU/124999.jpg"
+# tb4 = RequiredTextbook.create :name => 'Franklin, Rabin, Green, Geistfeld and Engstrom, Tort Law and Alternatives: Cases and Materials,
+# Michelle Mello/David Studdert 11th Ed., 2021, Foundation', :image => "https://legal.thomsonreuters.com.au/Images/product/AU/125000.jpg"
+# tb5 = RequiredTextbook.create :name => 'Selmi, Principles of Appellate Advocacy, 2013, Aspen
+# Armstrong, Terrell, and Reich, Advanced Appellate Advocacy, 2016, Aspen (optional)', :image => "https://legal.thomsonreuters.com.au/Images/product/AU/120634.jpg"
+# tb6 = RequiredTextbook.create :name => 'Lawless, Robbennolt, Ulen, Empirical Methods in Law, 2nd Ed., Aspen', :image => "https://legal.thomsonreuters.com.au/Images/product/AU/121042.jpg"
+# tb7 = RequiredTextbook.create :name => 'Friedman and Hayden, American Law: An Introduction, 3rd Ed., 2017, Oxford University', :image => "https://legal.thomsonreuters.com.au/Images/product/AU/126747.JPG"
+# tb8 = RequiredTextbook.create :name => 'Ling and Archer, Real Estate Principles: A Value Approach, 5
+# th Ed., 2018, McGraw Hill ', :image => "https://legal.thomsonreuters.com.au/Images/product/AU/128938.jpg"
+# tb9 = RequiredTextbook.create :name => 'Bank and Stark, Selected Sections: Federal Income Tax Code and Regulations, 2021-22, West
+# (recommended)', :image => "https://legal.thomsonreuters.com.au/Images/product/AU/128872.jpg"
+# tb10 = RequiredTextbook.create :name => 'Sterk and Leslie, Estates and Trusts: Cases and Materials, 6th Ed., 2019, Foundation', :image => "https://legal.thomsonreuters.com.au/Images/product/AU/128343.jpg"
+# tb11 = RequiredTextbook.create :name => 'Mitchell, Picturing Corporate Practice, 1st Ed., 2016, West', :image => "https://legal.thomsonreuters.com.au/Images/product/AU/127446.jpg"
 
 
 ##### Associations #################
@@ -79,5 +79,6 @@ puts "Tutors and subjects"
 t1.subjects << s1 << s2 << s3 << s4
 t2.subjects << s5 << s6 << s7 << s8
 
-puts "Subject and textbooks"
-s1.textbooks << tb1 << tb2 << tb3 << tb4
+# puts "Subject and textbooks"
+# tb1.subjects << s1 << s2 << s3 << s4
+# tb2.subjects << s5 << s6 << s7 << s8

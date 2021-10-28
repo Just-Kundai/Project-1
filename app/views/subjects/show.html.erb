@@ -12,12 +12,8 @@
             <div class="col-md-4">
                 <p class="lead"><%= @subject.name %>'s Info</p>
                 <p><span class="bold-text">Name:</span> <%= @subject.name %> </p>
-                <p><span class="bold-text">Required Textbooks:</span> <%= @subject.tutors %></p>
-                <% @subject.required_textbooks.each do |textbook| %>
-                <p class = "tutor">
-                    <%= textbook.name %>
-                  </p>
-                <% end %>
+
+              
 
 
                 <p><span class="bold-text">Available Tutors:</span> </p>
